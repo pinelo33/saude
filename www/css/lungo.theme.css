@@ -345,21 +345,21 @@ nav[data-control=menu]:not(.icons) > a:hover > .icon {
  */
 body > section > header {
  /** background-color: #00afe3; */
-  -webkit-box-shadow: inset 0 -1px #009ecc, 0 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0 -1px #009ecc, 0 1px rgba(0,0,0,0.1);
-  -ms-box-shadow: inset 0 -1px #009ecc, 0 1px rgba(0,0,0,0.1);
-  -o-box-shadow: inset 0 -1px #009ecc, 0 1px rgba(0,0,0,0.1);
-  box-shadow: inset 0 -1px #009ecc, 0 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 -1px #45AF23, 0 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 -1px #45AF23, 0 1px rgba(0,0,0,0.1);
+  -ms-box-shadow: inset 0 -1px #45AF23, 0 1px rgba(0,0,0,0.1);
+  -o-box-shadow: inset 0 -1px #45AF23, 0 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 -1px #45AF23, 0 1px rgba(0,0,0,0.1);
   background: #a8cc8a; /* Old browsers */
-background: -moz-linear-gradient(top,  #a8cc8a 1%, #98cec7 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#a8cc8a), color-stop(100%,#98cec7)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #a8cc8a 1%,#98cec7 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #a8cc8a 1%,#98cec7 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #a8cc8a 1%,#98cec7 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #a8cc8a 1%,#98cec7 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8cc8a', endColorstr='#98cec7',GradientType=0 ); /* IE6-9 */
-
-
+  background: rgb(116,181,66); /* Old browsers */
+background: rgb(116,181,66); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(116,181,66,1) 100%, rgba(168,204,138,1) 100%, rgba(116,181,66,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,rgba(116,181,66,1)), color-stop(100%,rgba(168,204,138,1)), color-stop(100%,rgba(116,181,66,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(116,181,66,1) 100%,rgba(168,204,138,1) 100%,rgba(116,181,66,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(116,181,66,1) 100%,rgba(168,204,138,1) 100%,rgba(116,181,66,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(116,181,66,1) 100%,rgba(168,204,138,1) 100%,rgba(116,181,66,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(116,181,66,1) 100%,rgba(168,204,138,1) 100%,rgba(116,181,66,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b542', endColorstr='#74b542',GradientType=0 ); /* IE6-9 */
 }
 body > section > header .title {
   -webkit-text-shadow: 0 0.1em #009ecc;
@@ -388,7 +388,17 @@ body > section > footer {
 }
 body > section > article,
 body > section > [data-control="pull"] {
-  background-color: #e7e7e7;
+  /**background-color: #e7e7e7;*/
+ background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(101,178,117,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(101,178,117,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(101,178,117,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(101,178,117,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(101,178,117,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(101,178,117,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#65b275',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 }
 body > section > article,
 body > section > [data-control="pull"],
@@ -516,7 +526,7 @@ article button .icon {
 }
 article button,
 article .button {
-  background-color: #0095c1;
+  background-color: #EE5C18;
 }
 article button.color,
 article .button.color {
