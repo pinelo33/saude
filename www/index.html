@@ -52,7 +52,7 @@
             app.initialize();
             Lungo.init({
             name: 'hello-world',
-            resources:['sec2.html','sec3.html','sec4.html','sec5.html','sec6.html','sec7.html','sec8.html']
+            resources:['sec2.html','sec3.html','sec4.html','sec5.html','sec6.html','sec7.html','sec8.html','sec9.html','secc1.html']
         });
             // codigo para manejar el click
                 Lungo.dom('#ima').on('click',function(event){
@@ -76,6 +76,13 @@
                  Lungo.dom('#nosotros').on('click',function(event){
                     Lungo.Router.section("sec8");   
                 });
+                  Lungo.dom('#calorias').on('click',function(event){
+                    Lungo.Router.section("sec9");   
+                });
+                 Lungo.dom('#tablas').on('click',function(event){
+                    Lungo.Router.section("secc1");   
+                });
+
         </script>
     </body>
 </html>
