@@ -69,3 +69,13 @@
 	margin: auto;
 
 }
+.centra{
+	width: 280px;
+	height: 181px;
+	position: relative;
+	top: 28%;
+	left: 4%;
+	right: 0;
+	bottom: 0;
+
+}
