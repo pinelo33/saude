@@ -115,6 +115,14 @@
                     Lungo.dom('#tony').on('click',function(event){
                     Lungo.Router.section("tony");
                 });
+                    Lungo.dom('#calculo').on('click',function(event){
+                        var estatura= $$('#estatura').val();
+                        var peso= $$('#peso').val();
+                        
+                        var imc=peso/(estatura*estatura);
+                        $$('#imc').val(imc);
+                });
+                     
         </script>
     </body>
 </html>
