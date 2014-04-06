@@ -115,6 +115,22 @@
                     Lungo.dom('#tony').on('click',function(event){
                     Lungo.Router.section("tony");
                 });
+                    Lungo.dom('#sec4').on('unload',function(event){
+                    $$("#estatura").val("");
+                    $$("#peso").val("");
+                    $$("#imc").val("");
+                    $$("#pti").val("");
+                    $$("#cal").val("");
+                    $$("#baja").val("");
+                });
+                    Lungo.dom('#sec5').on('unload',function(event){
+                    $$("#est").val("");
+                    $$("#pes").val("");
+                    $$("#im").val("");
+                    $$("#pt").val("");
+                    $$("#ca").val("");
+                    $$("#ba").val("");
+                });
                     Lungo.dom('#calculo').on('click',function(event){
                         var estatura= $$('#estatura').val();
                         var peso=$$('#peso').val();
@@ -137,6 +153,13 @@
                             cal=pti*30;  
                         }
                         $$('#cal').val(cal.toString());
+                         var baja=peso-pti;
+                        $$('#baja').val(baja.toString());
+                       var calculo;
+                        if (pti<=30) {
+                            calculo=normal;
+                        }
+                      
                 });
                     Lungo.dom('#calcu').on('click',function(event){
                         var est= $$('#est').val();
@@ -160,6 +183,8 @@
                             ca=pt*30;  
                         }
                         $$('#ca').val(ca.toString());
+                         var ba=pes-pt;
+                        $$('#ba').val(ba.toString());
                 });
         </script>
     </body>
