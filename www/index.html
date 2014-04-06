@@ -117,12 +117,50 @@
                 });
                     Lungo.dom('#calculo').on('click',function(event){
                         var estatura= $$('#estatura').val();
-                        var peso= $$('#peso').val();
-                        
-                        var imc=peso/(estatura*estatura);
-                        $$('#imc').val(imc);
+                        var peso=$$('#peso').val();
+                        var x=estatura*estatura;
+                        var imc_c=peso/x;
+                        $$('#imc').val(imc_c.toString());
+                        var pti=x*21.5;
+                        $$('#pti').val(pti.toString());
+
+                        if (imc_c<=25) {
+                            cal=pti*30;
+                        }
+                        else if(imc_c<=30){
+                            cal=pti*25;   
+                        }
+                        else if(imc_c<=35){
+                            cal=pti*30;
+                        }
+                        else if(imc_c<=40){
+                            cal=pti*30;  
+                        }
+                        $$('#cal').val(cal.toString());
                 });
-                     
+                    Lungo.dom('#calcu').on('click',function(event){
+                        var est= $$('#est').val();
+                        var pes=$$('#pes').val();
+                        var x=est*est;
+                        var im_a=pes/x;
+                        $$('#im').val(im_a.toString());
+                        var pt=x*23;
+                        $$('#pt').val(pt.toString());
+
+                        if (im_a<=25) {
+                            ca=pt*30;
+                        }
+                        else if(im_a<=30){
+                            ca=pt*25;   
+                        }
+                        else if(im_a<=35){
+                            ca=pt*30;
+                        }
+                        else if(im_a<=40){
+                            ca=pt*30;  
+                        }
+                        $$('#ca').val(ca.toString());
+                });
         </script>
     </body>
 </html>
