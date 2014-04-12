@@ -79,3 +79,32 @@
 	bottom: 0;
 
 }
+.cen{
+	width: 280px;
+	height: 181px;
+	position: relative;
+	top: 28%;
+	left: 4%;
+	right: 0;
+	bottom: 0;
+}
+.di{
+	width: 325px;
+	height: 172px;
+	position: absolute;
+	top: -45%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.si{
+	width: 316px;
+	height: 278px;
+	position: absolute;
+	top: 49%;
+	left: 0%;
+	right: 0%;
+	bottom: 0;
+	margin: auto;
+}
