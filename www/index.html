@@ -103,17 +103,18 @@
                     Lungo.dom('#tri').on('click',function(event){
                     Lungo.Router.section("tri");   
                 });
-                    Lungo.dom('#carlos').on('click',function(event){
-                    Lungo.Router.section("carlos"); 
+                    Lungo.dom('#bebi').on('click',function(event){
+                    Lungo.Router.section("bebida"); 
                 });
-                    Lungo.dom('#oso').on('click',function(event){
-                    Lungo.Router.section("oso");
+                    Lungo.dom('#car').on('click',function(event){
+                    Lungo.Router.section("carne");
                 });
-                    Lungo.dom('#sofi').on('click',function(event){
-                    Lungo.Router.section("sofi");
+                    Lungo.dom('#fru').on('click',function(event){
+                    Lungo.Router.section("frutas");
+               
                 });
-                    Lungo.dom('#tony').on('click',function(event){
-                    Lungo.Router.section("tony");
+                    Lungo.dom('#cer').on('click',function(event){
+                    Lungo.Router.section("cereales");
                 });
                     Lungo.dom('#sec4').on('unload',function(event){
                     $$("#estatura").val("");
@@ -182,6 +183,10 @@
                         $$('#ca').val(ca.toString());
                          var ba=parseFloat(pes-pt).toFixed(2);
                         $$('#ba').val(ba.toString());
+
+                });
+                    Lungo.dom('#lac').on('click',function(event){
+                    Lungo.Router.section("lacteo"); 
                 });
         </script>
     </body>
