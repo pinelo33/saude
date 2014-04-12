@@ -111,11 +111,14 @@
                 });
                     Lungo.dom('#fru').on('click',function(event){
                     Lungo.Router.section("frutas");
-               
                 });
                     Lungo.dom('#cer').on('click',function(event){
                     Lungo.Router.section("cereales");
                 });
+                    Lungo.dom('#tom').on('click',function(event){
+                    Lungo.Router.section("lacteo");
+                });
+
                     Lungo.dom('#sec4').on('unload',function(event){
                     $$("#estatura").val("");
                     $$("#peso").val("");
@@ -184,9 +187,6 @@
                          var ba=parseFloat(pes-pt).toFixed(2);
                         $$('#ba').val(ba.toString());
 
-                });
-                    Lungo.dom('#lac').on('click',function(event){
-                    Lungo.Router.section("lacteo"); 
                 });
         </script>
     </body>
